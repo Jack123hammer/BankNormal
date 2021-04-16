@@ -1,0 +1,51 @@
+﻿<Window x:Class="BankNormal.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankNormal"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="603" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="17,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="tb_second_name" HorizontalAlignment="Left" Height="23" Margin="140,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_second_name_TextChanged"/>
+        <TextBox x:Name="tb_address" HorizontalAlignment="Left" Height="23" Margin="140,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_address_TextChanged"/>
+        <TextBox x:Name="tb_tin" HorizontalAlignment="Left" Height="23" Margin="432,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_inipa" HorizontalAlignment="Left" Height="23" Margin="432,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_serial" HorizontalAlignment="Left" Height="23" Margin="140,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_number" HorizontalAlignment="Left" Height="23" Margin="140,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_issied_by" HorizontalAlignment="Left" Height="23" Margin="140,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_first_name" HorizontalAlignment="Left" Height="23" Margin="140,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_first_name_TextChanged"/>
+        <TextBox x:Name="tb_telephone" HorizontalAlignment="Left" Height="23" Margin="432,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_telephone_TextChanged"/>
+        <TextBox x:Name="tb_department_code" HorizontalAlignment="Left" Height="23" Margin="140,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_email" HorizontalAlignment="Left" Height="23" Margin="432,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_email_TextChanged"/>
+        <TextBox x:Name="tb_last_name" HorizontalAlignment="Left" Height="23" Margin="140,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="tb_last_name_TextChanged"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="20,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="115" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="17,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="309,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="18,256,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="117" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="ИНН" HorizontalAlignment="Left" Margin="309,101,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="СНИЛС" HorizontalAlignment="Left" Margin="309,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Серия" HorizontalAlignment="Left" Margin="17,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Margin="17,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Кем выдан" HorizontalAlignment="Left" Margin="17,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Код подразделения" HorizontalAlignment="Left" Margin="17,225,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115"/>
+        <Label Content="Емайл" HorizontalAlignment="Left" Margin="309,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.98,-1.115" Width="118" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn_back" Content="Назад" HorizontalAlignment="Left" Margin="461,384,0,0" VerticalAlignment="Top" Width="75" Click="btn_back_Click"/>
+        <Button x:Name="btn_send_data" Content="Отправить данные" HorizontalAlignment="Left" Margin="336,384,0,0" VerticalAlignment="Top" Width="120" Click="btn_send_data_Click"/>
+        <CheckBox x:Name="cb_last_name" Content="" HorizontalAlignment="Left" Margin="265,42,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_first_name" Content="" HorizontalAlignment="Left" Margin="265,73,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_second_name" Content="" HorizontalAlignment="Left" Margin="265,104,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_telephone" Content="" HorizontalAlignment="Left" Margin="557,42,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_email" Content="" HorizontalAlignment="Left" Margin="557,73,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_address" Content="" HorizontalAlignment="Left" Margin="265,259,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_tin" Content="" HorizontalAlignment="Left" Margin="557,104,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_inipa" Content="" HorizontalAlignment="Left" Margin="557,135,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_serial" Content="" HorizontalAlignment="Left" Margin="265,135,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_number" Content="" HorizontalAlignment="Left" Margin="265,166,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_issied_by" Content="" HorizontalAlignment="Left" Margin="265,197,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+        <CheckBox x:Name="cb_department_code" Content="" HorizontalAlignment="Left" Margin="265,228,0,0" VerticalAlignment="Top" IsThreeState="True" IsChecked="False" IsEnabled="False" RenderTransformOrigin="0.75,0.167" Height="23" Width="30" />
+
+    </Grid>
+</Window>

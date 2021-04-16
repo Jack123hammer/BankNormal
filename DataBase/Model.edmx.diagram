@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e1be727567434f188ebeb46e969b864d" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Currency_Type" Width="1.5" PointX="3.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Enter_type" Width="1.5" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EnterData" Width="1.5" PointX="6" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Individual" Width="1.5" PointX="3" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.LegalEntity" Width="1.5" PointX="3" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Post" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Score" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Score_type" Width="1.5" PointX="3.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Transaction" Width="1.5" PointX="6" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Transaction_type" Width="1.5" PointX="3.75" PointY="26.875" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Score_Currency_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Transaction_Currency_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Employee_Post" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_EnterData_Enter_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Score_Score_type" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Transaction_Transaction_type" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Account" Width="1.5" PointX="0.75" PointY="15.25" />
+        <EntityTypeShape EntityType="Model.AccountStatus" Width="1.5" PointX="0.75" PointY="12.25" />
+        <AssociationConnector Association="Model.FK_Account_AccountStatus" />
+        <AssociationConnector Association="Model.FK_Employee_Employee" />
+        <AssociationConnector Association="Model.FK_EnterData_Account" />
+        <AssociationConnector Association="Model.FK_Individual_Account" />
+        <AssociationConnector Association="Model.FK_LegalEntity_Account" />
+        <AssociationConnector Association="Model.FK_Score_Account" />
+        <AssociationConnector Association="Model.FK_Transaction_Account" />
+        <AssociationConnector Association="Model.FK_Transaction_Account1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
