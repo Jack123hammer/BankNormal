@@ -7,17 +7,20 @@
         mc:Ignorable="d"
         Title="Account" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <DataGrid Name="DG_Score" Height="160" Margin="10,10,496,0" VerticalAlignment="Top" Width="286" AutoGenerateColumns="False">
+        <DataGrid Name="DG_Score" Height="399" Margin="10,10,496,0" VerticalAlignment="Top" Width="286" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Номер счета" Binding="{Binding Number}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Сумма" Binding="{Binding Amount}" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
 
         </DataGrid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="441,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="441,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="441,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="584,329,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="428,329,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="tbYourScore" HorizontalAlignment="Left" Height="23" Margin="441,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbRecieverScore" HorizontalAlignment="Left" Height="23" Margin="441,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbAmount" HorizontalAlignment="Left" Height="23" Margin="441,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnExit" Content="Выйти из аккаунта" HorizontalAlignment="Left" Margin="654,329,0,0" VerticalAlignment="Top" Width="128" Click="btnExit_Click"/>
+        <Button x:Name="btnTransaction" Content="Совершить транзакцию" HorizontalAlignment="Left" Margin="451,329,0,0" VerticalAlignment="Top" Width="151" Click="btnTransaction_Click"/>
+        <Label Content="Ваш счёт:" HorizontalAlignment="Left" Margin="334,76,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Счёт получателя:" HorizontalAlignment="Left" Margin="334,118,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Сумма перевода:" HorizontalAlignment="Left" Margin="334,164,0,0" VerticalAlignment="Top" Width="107"/>
     </Grid>
 </Window>

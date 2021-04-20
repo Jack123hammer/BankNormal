@@ -25,7 +25,7 @@ namespace BankNormal.Windows
         public UserWindow()
         {
             InitializeComponent();
-            MessageBox.Show(SaveData.idid.ToString());
+           
         }
 
         private void btn_confirm_Click(object sender, RoutedEventArgs e)

@@ -101,7 +101,7 @@ namespace BankNormal
                     return;
                 }
 
-                MessageBox.Show("Bueno!");
+                
                 SaveData.id = acc.ID;
                 if (acc.LegalEntity == null && acc.Employee == null && acc.Individual == null)
                 {
@@ -131,7 +131,7 @@ namespace BankNormal
 
                     try
                     {
-                        MessageBox.Show(mailacc);
+                       
                         SmtpClient client = new SmtpClient();
                         client.Credentials = new NetworkCredential("proverkasvyazi@internet.ru", "Ytrewq987654");
                         client.Host = "smtp.mail.ru";
